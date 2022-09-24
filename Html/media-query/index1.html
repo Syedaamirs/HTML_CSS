@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page</title>
+    <style>
+      body {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgb(17, 15, 62) 0%,
+          rgb(183, 185, 224) 0%,
+          rgb(178, 193, 196) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+      .main {
+        justify-content: center;
+        display: flex;
+      }
+      .left {
+        align-content: center;
+        text-align: center;
+        width: 50%;
+        float: left;
+        border: 2px solid;
+        margin: 0.5%;
+      }
+      input {
+        align-content: center;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+      }
+      img {
+        width: 100%;
+      }
+      
+      button{
+        border-radius: 30px;
+        color: black;
+        width: 25%;
+      }
+      button::after{
+        width:0%;
+        transition:0.5s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to The world of HTML_CSS</h1>
+    <div class="main">
+      <div class="left">
+        <form>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="first name"
+          /><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="last name"
+          /><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email address"
+          /><br />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone number"
+          /><br />
+          <button type="button" onclick="alert('Thankyou For Visiting')">Submit</button>        </form>
+      </div>
+      <div class="left">
+        <img
+          src="https://i.insider.com/6054df32a7446d0018c85284?width=750&format=jpeg&auto=webp"
+        />
+      </div>
+    </div>
+  </body>
+</html>
