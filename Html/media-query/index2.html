@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FORM ASSIGNMENT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Armata&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        color: aliceblue;
+      }
+
+      form {
+        font-family: "Armata", sans-serif;
+        border: #191105 solid 6px;
+        background-color: rgb(238 226 212);
+        padding: 40px 20px;
+      }
+
+      input {
+        font-size: normal;
+        color: darkblue;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid black;
+      }
+
+      input[type="submit"] {
+        border-radius: 25px;
+        padding: 5px 15px;
+      }
+
+      input[type="submit"]:hover {
+        font-weight: bold;
+        cursor: pointer;
+        background-color: yellowgreen;
+      }
+
+      img.image1 {
+        margin-top: 50px;
+        width: 40vw;
+        display: block;
+        padding: 10px;
+        padding: 0.5px 30px;
+      }
+
+      body {
+        background-image: linear-gradient(45deg, blue, green);
+      }
+
+      div.main {
+        display: flex;
+        justify-content: center;
+      }
+
+      .textstyle {
+        font-size: normal;
+        font-weight: 10px;
+      }
+
+      label {
+        font-size: normal;
+        padding: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>FORM FOR CODING</h1>
+    <div class="main">
+      <div>
+        <form >
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter your first name"
+          /><br />
+          <br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Enter your last name"
+          /><br />
+          <br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Enter your email"
+          /><br />
+          <br />
+
+          <p class="textstyle">Choose your favorite Web language:</p>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+          <br />
+          <br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div>
+        <img class="image1" src="../images/4k.jpg" alt="This is an image" />
+      </div>
+    </div>
+    &nbsp;
+  </body>
+</html>
